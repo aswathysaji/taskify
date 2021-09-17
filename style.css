@@ -6,6 +6,7 @@
   }
   body{
     height: 100%;
+    background: #ebecf0;
   }
   h1{
     font-size: 3rem;
@@ -38,6 +39,26 @@
     font-size: 1.15rem;
     margin: 0.25rem;
     border-radius: 2rem;
+  }
+  body .main-div .input-div input{
+    background: #ebecf0;
+    /*box-shadow: 0 20px 50px rgba(0,0,0,0.5);*/
+  }
+  .main-div{
+    margin: auto;
+    width: 70%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255, 0.5),
+                inset 5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,.5);
+
+  }
+  .input{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255, 0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,.5);
   }
   .add{
     width: 50px;
@@ -91,6 +112,7 @@
     border: none;
     cursor: pointer;
   }
+  
 
   /* toggle button */
 
