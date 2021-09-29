@@ -71,9 +71,20 @@
     cursor: pointer;
     outline: none;
   }
-  .add:hover{
+  /*.add:hover{
     opacity: 0.7;
-  }
+  }*/
+.add:focus {
+  outline: none
+}
+.add:active {
+  border: 0;
+  background-color: #50627E;
+  outline: none;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
   .container{
     display: flex;
     flex-direction: column;
@@ -192,3 +203,53 @@
   body.dark-mode .main-div .input-div .add:hover{
       background: #4158d0;
   }
+@media(max-width: 425px){
+  .nav a{
+    font-size: 30px;
+  }
+  .button{
+    position: absolute;
+    top: 9%;
+    right: 5%;
+  }
+  .main-div, body.dark-mode .main-div{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .input-div .input, body.dark-mode .main-div .input-div input{
+    width: 70%;
+    height: 30px;
+    width: 160px;
+    font-size: 1rem;
+  }
+  .add{
+    width: 30px;
+    height: 30px;
+    margin:2px;
+  }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+  .nav a{
+    font-size: 30px;
+  }
+  .button{
+    position: absolute;
+    top: 13%;
+    right: 5%;
+  }
+  .main-div, body.dark-mode .main-div{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .input-div .input, body.dark-mode .main-div .input-div input{
+    width: 60%;
+    height: 40px;
+    width: 350px;
+    font-size: 1rem;
+  }
+  .add{
+    width: 40px;
+    height: 40px;
+    margin:2px;
+  }
+}
