@@ -1,172 +1,255 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins','sans-serif';
-  }
-  body{
-    height: 100%;
-  }
-  h1{
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 1rem 0 3rem;
-    text-align: center;
-    color: #fde8cd;
-  }
-  .nav{
-      margin:5%;
-  }
-  .nav a{
-      font-size: 30px;
-      font-weight: bold;
-      color: rgba(254,105,241,1);
-  }
-  .input-div{
-    padding: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .input-div .input{
-    padding: 0.5rem 1rem;
-    height: 50px;
-    outline: none;
-    border:none;
-    width: 450px;
-    font-size: 1.15rem;
-    margin: 0.25rem;
-    border-radius: 2rem;
-  }
-  .add{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    color: white;
-    background: #ef4f4f;
-    margin: 5px;
-    cursor: pointer;
-    outline: none;
-  }
-  .add:hover{
-    opacity: 0.7;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .item{
-    padding: 0.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid  #ffffff;
-  }
-  .input-item{
-    background: none;
-    outline: none;
-    border: none;
-    color:#ffffff ;
-    width: 350px;
-    font-size: 1.1rem;
-  }
-  .edit-Button{
-    font-size: 1.2rem;
-    margin: 0 1rem;
-    background: none;
-    outline: none;
-    color: #ef4f4f;
-    border: none;
-    cursor: pointer;
-  }
-  .remove-button{
-    font-size: 1.2rem;
-    background: none;
-    outline: none;
-    color: #ffcda3;
-    border: none;
-    cursor: pointer;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins','sans-serif';
+}
+body{
+  height: 100%;
+  background: #ebecf0;
+}
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1rem 0 3rem;
+  text-align: center;
+  color: #fde8cd;
+}
+.nav{
+    margin:5%;
+}
+.nav a{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(254,105,241,1);
+}
+.input-div{
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input-div .input{
+  padding: 0.5rem 1rem;
+  height: 50px;
+  outline: none;
+  border:none;
+  width: 450px;
+  font-size: 1.15rem;
+  margin: 0.25rem;
+  border-radius: 2rem;
+}
+body .main-div .input-div input{
+  background: #ebecf0;
+  /*box-shadow: 0 20px 50px rgba(0,0,0,0.5);*/
+}
+.main-div{
+  margin: auto;
+  width: 70%;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05),
+              inset -5px -5px 5px rgba(255,255,255, 0.5),
+              inset 5px 5px 5px rgba(0,0,0,0.05),
+              -5px -5px 5px rgba(255,255,255,.5);
 
-  /* toggle button */
+}
+.input{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05),
+              -5px -5px 5px rgba(255,255,255, 0.5),
+              5px 5px 5px rgba(0,0,0,0.05),
+              -5px -5px 5px rgba(255,255,255,.5);
+}
+.add{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background: #ef4f4f;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+}
+/*.add:hover{
+  opacity: 0.7;
+}*/
+.add:focus {
+outline: none
+}
+.add:active {
+border: 0;
+background-color: #50627E;
+outline: none;
+-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+-moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+.item{
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid  #ffffff;
+}
+.input-item{
+  background: none;
+  outline: none;
+  border: none;
+  color:#ffffff ;
+  width: 350px;
+  font-size: 1.1rem;
+}
+.edit-Button{
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  background: none;
+  outline: none;
+  color: #ef4f4f;
+  border: none;
+  cursor: pointer;
+}
+.remove-button{
+  font-size: 1.2rem;
+  background: none;
+  outline: none;
+  color: #ffcda3;
+  border: none;
+  cursor: pointer;
+}
 
-  .button{
-      position: absolute;
-      top: 15%;
-      right: 12%;
-  }
 
-  .button input[type=checkbox]{
-      position: relative;
-      width: 50px;
-      height: 20px;
-      -webkit-appearance: none;
-      background: #2B2B2B;
-      outline: none;
-      cursor: pointer;
-      border-radius: 20px;
-      box-shadow: 0 0 0 2px #1f1f1f,
-                  inset -2px -2px 5px rgba(255, 255, 255, 0.1),
-                  inset 2px 2px 5px rgba(0,0,0,0.5);
-      transition: 0.5s;
-  }
+/* toggle button */
 
-  .button input:checked[type=checkbox]{
-      background: rgba(254,105,241,1);
-      box-shadow: 0 0 0 2px #1f1f1f,
-                  0 10px 20px rgba(0,0,0,0.5),
-                  inset 0 0 5px #000,
-                  inset 0 0 15px rgba(0,0,0,0.5);
-      border: none;
-  }
-
-  .button input:checked[type=checkbox]::before{
-      left: 20px;
-  }
-
-  .button input[type=checkbox]:before{
-    content: '';
+.button{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
+    top: 15%;
+    right: 12%;
+}
+
+.button input[type=checkbox]{
+    position: relative;
+    width: 50px;
     height: 20px;
-    background: linear-gradient(to top, #000, #6b6b6b);
+    -webkit-appearance: none;
+    background: #2B2B2B;
+    outline: none;
+    cursor: pointer;
     border-radius: 20px;
-    box-shadow: 0 0 0 1px #232323;
-    transform: scale(0.98,0.96);
+    box-shadow: 0 0 0 2px #1f1f1f,
+                inset -2px -2px 5px rgba(255, 255, 255, 0.1),
+                inset 2px 2px 5px rgba(0,0,0,0.5);
     transition: 0.5s;
-  }
+}
 
-  /* dark mode */
+.button input:checked[type=checkbox]{
+    background: rgba(254,105,241,1);
+    box-shadow: 0 0 0 2px #1f1f1f,
+                0 10px 20px rgba(0,0,0,0.5),
+                inset 0 0 5px #000,
+                inset 0 0 15px rgba(0,0,0,0.5);
+    border: none;
+}
 
-  body.dark-mode{
-      background: #232427;
-  }
+.button input:checked[type=checkbox]::before{
+    left: 20px;
+}
 
-  body.dark-mode .main-div{
-    margin: auto;
-    width: 70%;
-    border-radius: 1rem;
-    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
-                inset -5px -5px 15px rgba(255,255,255,0.1),
-                5px 5px 15px rgba(0,0,0,0.3),
-                -5px -5px 15px rgba(255,255,255,0.1);
-  }
+.button input[type=checkbox]:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 20px;
+  background: linear-gradient(to top, #000, #6b6b6b);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  transform: scale(0.98,0.96);
+  transition: 0.5s;
+}
 
-  body.dark-mode .main-div .input-div input{
-      background: #2a2b2f;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-  }
+/* dark mode */
 
-  body.dark-mode .main-div .input-div .add{
-      background: linear-gradient(292.9deg, rgba(254,105,241,1) 28.8% , rgba(182,44,248,1) 70.4%);
-  }
+body.dark-mode{
+    background: #232427;
+}
 
-  body.dark-mode .main-div .input-div .add:hover{
-      background: #4158d0;
-  }
+body.dark-mode .main-div{
+  margin: auto;
+  width: 70%;
+  border-radius: 1rem;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+              inset -5px -5px 15px rgba(255,255,255,0.1),
+              5px 5px 15px rgba(0,0,0,0.3),
+              -5px -5px 15px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .main-div .input-div input{
+    background: #2a2b2f;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .main-div .input-div .add{
+    background: linear-gradient(292.9deg, rgba(254,105,241,1) 28.8% , rgba(182,44,248,1) 70.4%);
+}
+
+body.dark-mode .main-div .input-div .add:hover{
+    background: #4158d0;
+}
+@media(max-width: 425px){
+.nav a{
+  font-size: 30px;
+}
+.button{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.main-div, body.dark-mode .main-div{
+  width: 70%;
+  margin-top: 5%;
+}
+.input-div .input, body.dark-mode .main-div .input-div input{
+  width: 70%;
+  height: 30px;
+  width: 160px;
+  font-size: 1rem;
+}
+.add{
+  width: 30px;
+  height: 30px;
+  margin:2px;
+}
+}
+@media(min-width: 768px) and (max-width: 1024px){
+.nav a{
+  font-size: 30px;
+}
+.button{
+  position: absolute;
+  top: 13%;
+  right: 5%;
+}
+.main-div, body.dark-mode .main-div{
+  width: 70%;
+  margin: 0 auto;
+}
+.input-div .input, body.dark-mode .main-div .input-div input{
+  width: 60%;
+  height: 40px;
+  width: 350px;
+  font-size: 1rem;
+}
+.add{
+  width: 40px;
+  height: 40px;
+  margin:2px;
+}
+}
